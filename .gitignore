@@ -1,0 +1,215 @@
+# ===== OS =====
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.AppleDesktop
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+*~
+*.swp
+*.swo
+
+# ===== IDE / Editor =====
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.iml
+*.ipr
+*.iws
+
+*.sublime-project
+*.sublime-workspace
+
+# ===== Logs / temp =====
+*.log
+logs/
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+*.cache
+.cache/
+tmp/
+temp/
+
+# ===== Secrets / env =====
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+*.crt
+
+# ===== Common build artifacts =====
+dist/
+build/
+out/
+target/
+bin/
+obj/
+*.exe
+*.dll
+*.so
+*.dylib
+*.class
+*.jar
+*.war
+*.ear
+
+# ===== Coverage =====
+coverage/
+*.lcov
+.nyc_output/
+*.gcno
+*.gcda
+
+# ===== Node.js / JS / TS =====
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+bun.lockb
+.pnpm-debug.log*
+.eslintcache
+.parcel-cache/
+.cache-loader/
+.next/
+.nuxt/
+.svelte-kit/
+.vite/
+.rollup.cache/
+.turbo/
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+build/
+dist/
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.pyre/
+.pytype/
+*.sqlite3
+
+# ===== Java / JVM =====
+*.class
+*.jar
+*.war
+*.ear
+*.log
+*.ctxt
+.gradle/
+.gradle-cache/
+.mvn/
+target/
+
+# ===== Kotlin / Android =====
+*.apk
+*.aab
+*.dex
+*.class
+*.iml
+.project
+.settings/
+.cproject
+.externalNativeBuild/
+.cxx/
+local.properties
+/.idea/
+
+# ===== .NET / C# =====
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.csproj.user
+.vs/
+
+# ===== Go =====
+bin/
+*.exe
+*.test
+*.out
+vendor/
+go.work.sum
+
+# ===== Rust =====
+target/
+Cargo.lock
+
+# ===== Ruby =====
+.bundle/
+vendor/bundle/
+*.gem
+.ruby-version
+.rvmrc
+Gemfile.lock
+
+# ===== PHP =====
+vendor/
+composer.lock
+
+# ===== Swift / Xcode =====
+DerivedData/
+*.xcuserstate
+*.xcuserdata
+*.xcworkspace
+*.xcodeproj
+*.ipa
+*.dSYM
+*.dSYM.zip
+
+# ===== C / C++ =====
+*.o
+*.a
+*.so
+*.dylib
+*.out
+*.obj
+*.lib
+*.pdb
+*.ilk
+
+# ===== Terraform / IaC =====
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+crash.log
+
+# ===== Docker / containers =====
+*.pid
+docker-compose.override.yml
+
+# ===== Database / runtime =====
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.rdb
+dump.rdb
+
+# ===== Misc tooling =====
+.nextflow*
+.npmrc
+.yarnrc
+.pnpmrc

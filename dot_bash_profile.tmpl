@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+if [ -f "$HOME/.bashrc" ]; then
+  . "$HOME/.bashrc"
+fi
+
+{{- if eq .chezmoi.os "darwin" }}
+# Homebrew (macOS)
+if [ -d "/opt/homebrew/bin" ]; then
+  export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
+fi
+
+# JetBrains Toolbox scripts (macOS)
+if [ -d "$HOME/Library/Application Support/JetBrains/Toolbox/scripts" ]; then
+  export PATH="$PATH:$HOME/Library/Application Support/JetBrains/Toolbox/scripts"
+fi
+{{- end }}
+
+# Cargo
+if [ -f "$HOME/.cargo/env" ]; then
+  . "$HOME/.cargo/env"
+fi
+
+# Elan
+if [ -d "$HOME/.elan/bin" ]; then
+  export PATH="$HOME/.elan/bin:$PATH"
+fi
