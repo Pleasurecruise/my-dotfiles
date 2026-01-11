@@ -81,3 +81,12 @@ fi
 if [ -f "$HOME/.bashrc_secrets" ]; then
   . "$HOME/.bashrc_secrets"
 fi
+
+{{- if eq .chezmoi.os "darwin" }}
+# Android SDK
+if [ -d "$HOME/Library/Android/sdk" ]; then
+  export ANDROID_HOME="$HOME/Library/Android/sdk"
+  export PATH="$PATH:$ANDROID_HOME/emulator"
+  export PATH="$PATH:$ANDROID_HOME/platform-tools"
+fi
+{{- end }}
