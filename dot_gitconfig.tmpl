@@ -1,0 +1,39 @@
+[user]
+    name = Pleasurecruise
+    email = 3196812536@qq.com
+
+[filter "lfs"]
+    process = git-lfs filter-process
+    required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+
+[init]
+    defaultBranch = main
+
+[core]
+    autocrlf = input
+    editor = vim
+{{- if eq .chezmoi.os "darwin" }}
+    # macOS specific: use macOS keychain for credentials
+    # credential helper is typically managed by Git Credential Manager
+{{- end }}
+
+[pull]
+    rebase = false
+
+[push]
+    default = current
+    autoSetupRemote = true
+
+[alias]
+    st = status
+    co = checkout
+    br = branch
+    ci = commit
+    lg = log --oneline --graph --decorate
+    last = log -1 HEAD
+    unstage = reset HEAD --
+
+[color]
+    ui = auto
